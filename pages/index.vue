@@ -2,6 +2,9 @@
   <div>
     <navbar v-if="window_width > 577" />
     <navbarMobile v-if="window_width <= 577" />
+    <banner/>
+    <register/>
+    <detail/>
   </div>
 </template>
 
@@ -11,11 +14,17 @@ import { mapState } from 'vuex'
 
 import navbar from '~/components/navbar.vue'
 import navbarMobile from '~/components/navbar-mobile.vue'
+import banner from '~/components/banner.vue'
+import register from '~/components/register.vue'
+import detail from '~/components/detail.vue'
 
 export default {
   components: {
     navbar,
-    navbarMobile
+    navbarMobile,
+    banner,
+    register,
+    detail
   },
   computed: {
     ...mapState('store', [

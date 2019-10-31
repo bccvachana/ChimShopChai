@@ -35,8 +35,7 @@ export default {
   },
   computed: {
     ...mapState('store', [
-      'data',
-      'window_width'
+      'data'
     ])
   }
 }
@@ -88,7 +87,7 @@ export default {
   #hamburger div {
     height: 3px;
     width: 100%;
-    background-color: #333333;
+    background-color: rgba(51,51,51,1);
     position: absolute;
     transition: all 0.25s ease-in-out 0s;
     -webkit-transition: all 0.25s ease-in-out 0s;
@@ -96,8 +95,8 @@ export default {
 
   #hamburger div:nth-child(1) { top: 0; transform: rotate(0); -webkit-transform: rotate(0); }
   #hamburger.ham-clicked div:nth-child(1) { top: 10px; transform: rotate(135deg); -webkit-transform: rotate(135deg); }
-  #hamburger div:nth-child(2) { top: 10px; left: 0; opacity: 100%; }
-  #hamburger.ham-clicked div:nth-child(2) { left: -60px; opacity: 0; }
+  #hamburger div:nth-child(2) { top: 10px; left: 0; }
+  #hamburger.ham-clicked div:nth-child(2) { left: -60px; background-color: rgba(51,51,51,0); }
   #hamburger div:nth-child(3) { top: 20px; transform: rotate(0); -webkit-transform: rotate(0); }
   #hamburger.ham-clicked div:nth-child(3) { top: 10px; transform: rotate(-135deg); -webkit-transform: rotate(-135deg);}
 
