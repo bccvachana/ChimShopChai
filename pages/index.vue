@@ -1,5 +1,7 @@
 <template>
   <div>
+    <navbar v-if="window_width > 577" />
+    <navbarMobile v-if="window_width <= 577" />
   </div>
 </template>
 
@@ -7,7 +9,14 @@
 import axios from 'axios'
 import { mapState } from 'vuex'
 
+import navbar from '~/components/navbar.vue'
+import navbarMobile from '~/components/navbar-mobile.vue'
+
 export default {
+  components: {
+    navbar,
+    navbarMobile
+  },
   computed: {
     ...mapState('store', [
       'data',
@@ -28,10 +37,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  div {
-    font-family: TATSanaChon-Bold;
-    font-size: 16px;
-  }
-</style>

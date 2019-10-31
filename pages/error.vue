@@ -1,5 +1,6 @@
 <template>
   <div>
+    ERROR
   </div>
 </template>
 
@@ -17,9 +18,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   div {
     font-family: TATSanaChon-Bold;
-    font-size: 50px;
+    font-size: 100px;
   }
 </style>
