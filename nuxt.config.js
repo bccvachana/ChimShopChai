@@ -1,6 +1,9 @@
 
 export default {
   mode: 'spa',
+  router: {
+    base: '/ChimShopChai/'
+  },
   /*
   ** Headers of the page
   */
@@ -12,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      
     ]
   },
   /*
@@ -23,6 +26,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/fonts/font.css',
+    '~/assets/main.css'
   ],
   /*
   ** Plugins to load before mounting the App

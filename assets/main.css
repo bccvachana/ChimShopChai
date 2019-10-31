@@ -1,0 +1,28 @@
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    color: #333333;
+    line-height: 1.8;
+}
+
+a {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    white-space: nowrap;
+}
