@@ -13,6 +13,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-globals-in-created': 'off'
+    'nuxt/no-globals-in-created': 'off',
+    'vue/no-v-html' : 'off'
   }
 }

@@ -4,63 +4,35 @@ export default {
   router: {
     base: '/ChimShopChai/'
   },
-  /*
-  ** Headers of the page
-  */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'ลงทะเบียนเข้าร่วมมาตรการ ชิมช้อปใช้',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
+      { name: 'og:url', content: 'https://bccvachana.github.io/ChimShopChai/' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:title', content: 'มาตรการส่งเสริมการท่องเที่ยวในประเทศ “ชิมช้อปใช้”' },
+      { name: 'og:description', content: 'ผู้สนใจเข้าร่วมมาตรการฯ สามารถลงทะเบียน ตั้งแต่ วันที่ 23 ก.ย. - 15 พ.ย. 62' },
+      { name: 'og:image', content: 'img/Share_Social.png' },
+      { name: 'title', content: 'มาตรการส่งเสริมการท่องเที่ยวในประเทศ “ชิมช้อปใช้”' },
+      { name: 'description', content: 'ผู้สนใจเข้าร่วมมาตรการฯ สามารถลงทะเบียน ตั้งแต่ วันที่ 23 ก.ย. - 15 พ.ย. 62' },
+      { name: 'image', content: 'img/Share_Social.png' }
     ],
-    link: [
-      
-    ]
+    link: [{ rel: 'icon', href: 'img/logo.png' }]
   },
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
   css: [
     '~/assets/fonts/font.css',
     '~/assets/main.css'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend (config, ctx) {
     }
   }

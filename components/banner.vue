@@ -1,10 +1,10 @@
 <template>
   <div id="banner">
-    <div id="banner-left"></div>
+    <div id="banner-left" />
     <div id="banner-center" class="display-flex-center">
-        <img src="../static/img/banner/banner-logo.png">
+      <img src="../static/img/banner/banner-logo.png">
     </div>
-    <div id="banner-right"></div>
+    <div id="banner-right" />
   </div>
 </template>
 

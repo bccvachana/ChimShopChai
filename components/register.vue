@@ -4,12 +4,14 @@
     <div id="duration">
       {{ data.duration }}
     </div>
-    <a id="register-link"><div>
+    <a id="register-link" :href="data.navbarItems[0].href" target="_blank">
       ลงทะเบียน เฟส 2<br>
-      ตั้งแต่วันที่ 24 ต.ค. 62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>
-      (จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
-    </div></a>
-    <div id="hr-div"><hr></div>
+      ตั้งแต่วันที่ 24 ต.ค. 62 วันละ 2 รอบ<span> เวลา 6.00 และ 18.00 น. </span><br>
+      (จำกัดจำนวนผู้ลงทะเบียนรอบละ<span> 5 แสนคน รวม 1 ล้านคนต่อวัน) </span>
+    </a>
+    <div id="hr-div">
+      <hr>
+    </div>
   </div>
 </template>
 

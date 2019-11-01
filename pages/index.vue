@@ -1,10 +1,13 @@
 <template>
   <div>
     <navbar v-if="window_width > 577" />
-    <navbarMobile v-if="window_width <= 577" />
-    <banner/>
-    <register/>
-    <detail/>
+    <navbarmobile v-if="window_width <= 577" />
+    <banner />
+    <register />
+    <detail />
+    <callcenter />
+    <brand />
+    <footerbar />
   </div>
 </template>
 
@@ -13,18 +16,24 @@ import axios from 'axios'
 import { mapState } from 'vuex'
 
 import navbar from '~/components/navbar.vue'
-import navbarMobile from '~/components/navbar-mobile.vue'
+import navbarmobile from '~/components/navbarmobile.vue'
 import banner from '~/components/banner.vue'
 import register from '~/components/register.vue'
 import detail from '~/components/detail.vue'
+import callcenter from '~/components/callcenter.vue'
+import brand from '~/components/brand.vue'
+import footerbar from '~/components/footerbar.vue'
 
 export default {
   components: {
     navbar,
-    navbarMobile,
+    navbarmobile,
     banner,
     register,
-    detail
+    detail,
+    callcenter,
+    brand,
+    footerbar
   },
   computed: {
     ...mapState('store', [
