@@ -1,15 +1,15 @@
 <template>
   <div id="register" class="display-flex-center">
-    <div>ตั้งแต่วันที่</div>
-    <div id="duration">
+    <div v-if="data.duration">ตั้งแต่วันที่</div>
+    <div v-if="data.duration" id="duration">
       {{ data.duration }}
     </div>
-    <a id="register-link" :href="data.navbarItems[0].href" target="_blank">
+    <a v-if="data.navbarItems" id="register-link" :href="data.navbarItems[0].href" target="_blank">
       ลงทะเบียน เฟส 2<br>
       ตั้งแต่วันที่ 24 ต.ค. 62 วันละ 2 รอบ<span> เวลา 6.00 และ 18.00 น. </span><br>
       (จำกัดจำนวนผู้ลงทะเบียนรอบละ<span> 5 แสนคน รวม 1 ล้านคนต่อวัน) </span>
     </a>
-    <div id="hr-div">
+    <div v-if="data.navbarItems" id="hr-div">
       <hr>
     </div>
   </div>

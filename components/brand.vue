@@ -41,7 +41,6 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState('store', [
-      'data',
       'window_width'
     ])
   }

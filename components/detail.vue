@@ -6,11 +6,11 @@
     <div v-if="window_width <= 577" id="detail-title">
       มาตรการส่งเสริมการบริโภคในประเทศ <span>“ชิมช้อปใช้”</span>
     </div>
-    <div id="detail-content" v-html="data.detail" />
+    <div v-if="data.detail" id="detail-content" v-html="data.detail" />
     <div id="condition-title">
       เงื่อนไขการเข้าร่วมมาตรการ
     </div>
-    <div id="detail-content" v-html="data.condition" />
+    <div v-if="data.condition" id="detail-content" v-html="data.condition" />
   </div>
 </template>
 

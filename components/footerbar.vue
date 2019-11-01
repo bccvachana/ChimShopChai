@@ -41,9 +41,9 @@
     <div id="footer-2" class="display-flex-center">
       <div class="footer-container display-flex-center">
         <div>Copyright © 2003-2019</div>
-        <div><a :href="data.navbarItems[0].href" target="_blank">ลงทะเบียนเข้าร่วมมาตรการ</a></div>
-        <div><a :href="data.navbarItems[1].href" target="_blank">ขั้นตอนการเข้าร่วมทั้งหมด</a></div>
-        <div><a :href="data.navbarItems[2].href" target="_blank">ร้านค้าที่เข้าร่วมรายการ</a></div>
+        <div v-if="data.navbarItems"><a :href="data.navbarItems[0].href" target="_blank">ลงทะเบียนเข้าร่วมมาตรการ</a></div>
+        <div v-if="data.navbarItems"><a :href="data.navbarItems[1].href" target="_blank">ขั้นตอนการเข้าร่วมทั้งหมด</a></div>
+        <div v-if="data.navbarItems"><a :href="data.navbarItems[2].href" target="_blank">ร้านค้าที่เข้าร่วมรายการ</a></div>
       </div>
     </div>
   </div>
