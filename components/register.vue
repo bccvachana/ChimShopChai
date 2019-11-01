@@ -1,6 +1,8 @@
 <template>
   <div id="register" class="display-flex-center">
-    <div v-if="data.duration">ตั้งแต่วันที่</div>
+    <div v-if="data.duration">
+      ตั้งแต่วันที่
+    </div>
     <div v-if="data.duration" id="duration">
       {{ data.duration }}
     </div>
